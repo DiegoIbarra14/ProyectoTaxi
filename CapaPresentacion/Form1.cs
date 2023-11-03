@@ -20,7 +20,7 @@ namespace CapaPresentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.grid.DataSource = new HospitalBLL().SelectAll();
+            //this.grid.DataSource = new HospitalBLL().SelectAll();
                         
         }
     }

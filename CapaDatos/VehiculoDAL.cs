@@ -126,5 +126,36 @@ namespace CapaDatos
             }
             return request;
         }
+        public List<string> select() {
+            
+            List<string> datos= new List<string>();
+            using (SqlConnection con = ConexionDAL.ConectartoBD())
+            {
+                string query = "select placa form vehiculo";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                     
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader dataReader = cmd.ExecuteReader();
+                        while (dataReader.Read())
+                        {
+                            datos.Add(dataReader["placa"].ToString());
+                        }
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+
+                }
+
+            }
+            return datos;
+
+        }
     }
 }

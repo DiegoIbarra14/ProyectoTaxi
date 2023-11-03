@@ -172,7 +172,7 @@ namespace CapaPresentacion
         private Form formchild = null;
         private void btnVenta_Click(object sender, EventArgs e)
         {
-            //showForm(new ClienteUI());
+            showForm(new ChoferesUI());
         }
         private void showForm(Form form)
         {
