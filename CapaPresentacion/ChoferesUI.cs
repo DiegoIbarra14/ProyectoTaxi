@@ -19,72 +19,84 @@ namespace CapaPresentacion
     public partial class ChoferesUI : Form
     {
         public string dniSelected;
-        private int opcion=1;
+        private int opcion = 1;
         private Label[] labels;
         private Label mensajeErrorLabel;
         private ErrorProvider errorProvider1 = new ErrorProvider();
-        private bool verificar=false;
-        public static int ParentX,ParentY;
-       
-        private DataTable tablaDatos; 
+        private bool verificar = false;
+        public static int ParentX, ParentY;
+        bool vnombre, vapellidoP, vapellidoM, vdni;
+
+        private DataTable tablaDatos;
         private DataTable tablaFiltrada;
 
         public ChoferesUI()
         {
 
             InitializeComponent();
-      
-            txtNombreC.Validating += TextBox_Validating;
-            txtApellidoP.Validating += TextBox_Validating;
-            txtApellidoM.Validating += TextBox_Validating;
-            txtdni.Validating+= TextBox_ValidatingDNI;
-           
+
+            //txtNombreC.Validating += TextBox_Validating;
+            //txtApellidoP.Validating += TextBox_Validating;
+            //txtApellidoM.Validating += TextBox_Validating;
+            //txtdni.Validating+= TextBox_ValidatingDNI;
+
 
         }
-        private void TextBox_Validating(object sender, CancelEventArgs e)
+        private bool Validacion(int opcion, RJCodeAdvance.RJControls.RJTextBox campo)
         {
-            RJCodeAdvance.RJControls.RJTextBox textBox = sender as RJCodeAdvance.RJControls.RJTextBox;
-            string cadena=textBox.Texts;
-            string patron = "^[a-zA-Z]+[a-zA-Z ]?$";
-            // Verifica si textBox no es nulo y si su Text está vacío o contiene solo espacios en blanco
-            if (!Regex.IsMatch(cadena,patron))
-            {
-                verificar = false;
-                MostrarMensajeError(textBox, "Datos Invalidos");
-            }
-            else
-            {
-                verificar=true;
-                OcultarMensajeError(textBox);
-            }
-        }
-       
+            bool validarc = false;
+            switch (opcion) {
+                case 1:
+                    RJCodeAdvance.RJControls.RJTextBox textBox = campo;
+                    string cadena = textBox.Texts;
+                    string patron = "^[a-zA-Z]+[a-zA-Z ]?$";
+                    // Verifica si textBox no es nulo y si su Text está vacío o contiene solo espacios en blanco
+                    if (!Regex.IsMatch(cadena, patron) && string.IsNullOrEmpty(campo.Texts))
+                    {
+                        validarc = false;
+                        MostrarMensajeError(textBox, "Datos Invalidos");
 
-        private void TextBox_ValidatingDNI(object sender, CancelEventArgs e)
-        {
-            RJCodeAdvance.RJControls.RJTextBox textBox = sender as RJCodeAdvance.RJControls.RJTextBox;
-            string cadena = textBox.Texts;
-            string patron = "^\\d{8}$";
-            if (!textBox.Enabled) {
-                return;
-            }
-            else
-            {
-                if (!Regex.IsMatch(cadena, patron))
-                {
-                    verificar = false;
-                    MostrarMensajeError(textBox, "Datos Invalidos");
-                }
-                else
-                {
-                    verificar = true;
-                    OcultarMensajeError(textBox);
-                }
+                    }
+                    else
+                    {
+                        validarc = true;
+                        OcultarMensajeError(textBox);
+
+                    }
+                    break;
+                case 2:
+                    RJCodeAdvance.RJControls.RJTextBox textBoxs = campo;
+                    string cadenas = textBoxs.Texts;
+                    string patrons = "^\\d{8}$";
+                    if (!textBoxs.Enabled)
+                    {
+                        ;
+                    }
+                    else
+                    {
+                        if (!Regex.IsMatch(cadenas, patrons))
+                        {
+                            validarc = false;
+                            MostrarMensajeError(textBoxs, "Datos Invalidos");
+                            return validarc;
+                        }
+                        else
+                        {
+                            validarc = true;
+                            OcultarMensajeError(textBoxs);
+                            return validarc;
+                        }
+
+                    }
+                    break;
+
 
             }
-  
-            
+            return validarc;
         }
+
+
+
 
         // Método para mostrar un mensaje de error debajo del TextBox
         private void MostrarMensajeError(RJCodeAdvance.RJControls.RJTextBox textBox, string mensaje)
@@ -94,9 +106,9 @@ namespace CapaPresentacion
             {
                 Text = mensaje,
                 ForeColor = System.Drawing.Color.Red,
-                Location = new System.Drawing.Point(144, textBox.Location.Y+30),
+                Location = new System.Drawing.Point(144, textBox.Location.Y + 30),
                 AutoSize = true,
-                
+
             };
 
             // Agrega el Label al formulario
@@ -130,7 +142,7 @@ namespace CapaPresentacion
             AddIcon();
 
         }
-        private void AddIcon (){
+        private void AddIcon() {
             DataGridViewLinkColumn columnalinkEdit = new DataGridViewLinkColumn();
             columnalinkEdit.HeaderText = "";
             columnalinkEdit.Text = "🖋️";
@@ -150,7 +162,7 @@ namespace CapaPresentacion
 
             this.tablaDatos = new ChoferBLL().SelectAll();
             this.table.DataSource = new ChoferBLL().SelectAll();
-            
+
 
 
 
@@ -180,13 +192,13 @@ namespace CapaPresentacion
                     MessageBox.Show(table.Rows[e.RowIndex].Cells["Fecha de Ingreso"].Value.ToString());
                     DateTime fechaCompleta = (DateTime)table.Rows[e.RowIndex].Cells["Fecha de Ingreso"].Value;
                     txtFechaI.Value = fechaCompleta.Date;
-                    
-                    
+
+
 
                 }
                 else {
-                    this.dniSelected= table.Rows[e.RowIndex].Cells["DNI"].Value.ToString();
-                    
+                    this.dniSelected = table.Rows[e.RowIndex].Cells["DNI"].Value.ToString();
+
                     Form modalback = new Form();
                     using (Modal modal = new Modal())
                     {
@@ -197,21 +209,21 @@ namespace CapaPresentacion
                         modalback.FormBorderStyle = FormBorderStyle.None;
                         modalback.Size = this.Parent.Size;
                         modalback.ShowInTaskbar = false;
-                        modalback.Location = this.PointToScreen(Point.Empty) ;
+                        modalback.Location = this.PointToScreen(Point.Empty);
 
                         modalback.Show();
                         modal.Owner = modalback;
-                        
-                       
+
+
                         modal.ShowDialog();
                         modalback.Dispose();
 
 
 
 
-                        };
+                    };
 
-                    }
+                }
 
 
 
@@ -235,11 +247,11 @@ namespace CapaPresentacion
             else {
                 this.snackm.Show(this.ParentForm, "Hubo un error al elimina registro", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
-           
+
 
 
         }
-        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -279,6 +291,10 @@ namespace CapaPresentacion
         {
             lblCrudMode.Text = "Añadir Chofer";
             limpiartext();
+            this.vnombre = true;
+            this.vapellidoP = true;
+            this.vapellidoM = true;
+            this.vdni = true;
             this.txtdni.Enabled = true;
             this.panel1.Visible = true;
             
@@ -313,7 +329,17 @@ namespace CapaPresentacion
 
         public void Insert()
         {
-            if (this.verificar && !string.IsNullOrEmpty(txtNombreC.Texts)&& !string.IsNullOrEmpty(txtApellidoP.Texts) && !string.IsNullOrEmpty(txtApellidoM.Texts) && !string.IsNullOrEmpty(txtdni.Texts) && txtPlaca.SelectedItem != null && !string.IsNullOrEmpty(txtPlaca.SelectedItem.ToString()))
+            
+            vnombre = Validacion(1, txtNombreC);
+            vapellidoP=Validacion(1, txtApellidoP);
+            vapellidoM = Validacion(1, txtApellidoM);
+            vdni = Validacion(2, txtdni);
+         
+
+
+
+
+            if (vnombre && vapellidoP && vapellidoM && vdni && txtPlaca.SelectedItem != null && !string.IsNullOrEmpty(txtPlaca.SelectedItem.ToString()))
             {
                 string nombre, apellidoP, apellidoM, dni;
                 DateTime fecha;
@@ -341,18 +367,35 @@ namespace CapaPresentacion
             else
             {
                 this.snackm.Show(this.ParentForm, "Rellenar todos los campos", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
-                //MessageBox.Show(this.verificar.ToString());
-                //MessageBox.Show(string.IsNullOrEmpty(txtNombreC.Texts).ToString());
-                //MessageBox.Show(string.IsNullOrEmpty(txtApellidoP.Texts).ToString());
-                //MessageBox.Show(string.IsNullOrEmpty(txtApellidoM.Texts).ToString());
-                //MessageBox.Show(string.IsNullOrEmpty(txtdni.Texts).ToString());
+               
              
 
             }
         }
-        public void Actualizar() {
 
-            if (this.verificar && txtPlaca.SelectedItem != null && !string.IsNullOrEmpty(txtPlaca.SelectedItem.ToString()))
+        private void txtNombreC__TextChanged_1(object sender, EventArgs e)
+        {
+            OcultarMensajeError(txtNombreC);
+        }
+
+        private void txtApellidoP__TextChanged(object sender, EventArgs e)
+        {
+            OcultarMensajeError(txtApellidoP);
+        }
+
+        private void txtApellidoM__TextChanged(object sender, EventArgs e)
+        {
+            OcultarMensajeError(txtApellidoM);
+        }
+
+        public void Actualizar() {
+            vnombre = Validacion(1, txtNombreC);
+            vapellidoP = Validacion(1, txtApellidoP);
+            vapellidoM = Validacion(1, txtApellidoM);
+            vdni = Validacion(2, txtdni);
+
+
+            if (vnombre && vapellidoP && vapellidoM && vdni && txtPlaca.SelectedItem != null && !string.IsNullOrEmpty(txtPlaca.SelectedItem.ToString()))
             {
                 string nombre, apellidoP, apellidoM, dni;
                 DateTime fecha;
@@ -384,23 +427,53 @@ namespace CapaPresentacion
                 this.snackm.Show(this.ParentForm, "Rellenar correctamente todos los campos", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
         }
-       
-        private void filtarDatos(object sender, EventArgs e)
+
+        private void txtFiltro__TextChanged(object sender, EventArgs e)
         {
-            
-            TextBox miTextBox = (TextBox)sender;
-            DataView vista = tablaDatos.DefaultView;
+            string filtroNombre = txtFiltro.Texts;
+            DataView dv = ((DataTable)this.tablaDatos).DefaultView;
 
-
-            // Aplica el filtro solo si el texto no está vacío
-            if (!string.IsNullOrEmpty(miTextBox.Text))
+            // Aplicar el filtro solo si el texto del filtro no está vacío
+            if (!string.IsNullOrEmpty(filtroNombre))
             {
-                vista.RowFilter = $"Nombre LIKE '%{miTextBox.Text}%'";
+                dv.RowFilter = $"Nombre LIKE '%{filtroNombre}%'";
             }
             else
             {
-                vista.RowFilter = string.Empty;
+                // Si el filtro está vacío, muestra todos los datos
+                dv.RowFilter = string.Empty;
             }
+
+            this.table.DataSource = dv.ToTable();
+            this.table.Refresh();
+            
+        }
+
+        private void filtarDatos(object sender, EventArgs e)
+        {
+            
+            //TextBox miTextBox = (TextBox)sender;
+            //DataView vista = tablaDatos.DefaultView;
+
+
+            //// Aplica el filtro solo si el texto no está vacío
+            //if (!string.IsNullOrEmpty(miTextBox.Text))
+            //{
+            //    vista.RowFilter = $"Nombre LIKE '%{miTextBox.Text}%'";
+            //}
+            //else
+            //{
+            //    vista.RowFilter = string.Empty;
+            //}
+            //this.table.DataSource = dv.ToTable();
+            //this.table.Refresh();
+
+        }
+
+        private void txtdni__TextChanged(object sender, EventArgs e)
+        {
+
+            OcultarMensajeError(txtdni);
 
         }
 
@@ -411,11 +484,15 @@ namespace CapaPresentacion
             txtNombreC.Texts = "";
             txtFechaI.Value= DateTime.Now;
             txtPlaca.SelectedIndex = -1;
-            this.txtFiltro.Texts = "";  
-
-
-
-
+            
+        }
+        public void FiltrarDatos()
+        {
+            string filtroNombre=txtFiltro.Text;
+            DataView dv = ((DataTable)this.table.DataSource).DefaultView;
+            dv.RowFilter = $"DNI LIKE '%{filtroNombre}%'";
+            this.table.DataSource = dv.ToTable();
+            this.table.Refresh();
         }
     }
 }

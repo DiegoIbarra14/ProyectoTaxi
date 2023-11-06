@@ -27,10 +27,8 @@ namespace CapaPresentacion
         {
             this.table.DataSource = new ServicioBLL().SelectAll();
 
-
-
-
         }
+        
         private void AddIcon()
         {
             DataGridViewLinkColumn columnalinkEdit = new DataGridViewLinkColumn();
