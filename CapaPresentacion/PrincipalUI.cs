@@ -218,5 +218,17 @@ namespace CapaPresentacion
         {
             showForm(new VehiculoIU());
         }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            showForm(new HospitalIU());
+
+
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            showForm(new ServiciosIU());
+        }
     }
 }

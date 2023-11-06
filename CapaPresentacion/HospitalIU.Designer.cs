@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class VehiculoIU
+    partial class HospitalIU
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtFiltro = new RJCodeAdvance.RJControls.RJTextBox();
-            this.btnAdd = new RJCodeAdvance.RJControls.RJButton();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.txtPlaca = new RJCodeAdvance.RJControls.RJComboBox();
@@ -65,68 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtFiltro
-            // 
-            this.txtFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtFiltro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtFiltro.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.txtFiltro.BorderRadius = 16;
-            this.txtFiltro.BorderSize = 1;
-            this.txtFiltro.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFiltro.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.txtFiltro.Location = new System.Drawing.Point(-176, -49);
-            this.txtFiltro.Margin = new System.Windows.Forms.Padding(5);
-            this.txtFiltro.Multiline = false;
-            this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Padding = new System.Windows.Forms.Padding(16, 6, 37, 5);
-            this.txtFiltro.PasswordChar = false;
-            this.txtFiltro.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtFiltro.PlaceholderText = "Buscar Chofer";
-            this.txtFiltro.Size = new System.Drawing.Size(333, 32);
-            this.txtFiltro.TabIndex = 12;
-            this.txtFiltro.Texts = "";
-            this.txtFiltro.UnderlinedStyle = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnAdd.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAdd.BorderRadius = 20;
-            this.btnAdd.BorderSize = 0;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(1527, -65);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(171, 49);
-            this.btnAdd.TabIndex = 10;
-            this.btnAdd.Text = "Agregar";
-            this.btnAdd.TextColor = System.Drawing.Color.White;
-            this.btnAdd.UseMnemonic = false;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.NullValue = null;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(0, 7, 0, 7);
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewImageColumn1.FillWeight = 10F;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::CapaPresentacion.Properties.Resources.lista_de_verificacion;
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.MinimumWidth = 6;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn1.Width = 17;
-            // 
             // rjTextBox1
             // 
             this.rjTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -137,7 +71,7 @@
             this.rjTextBox1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rjTextBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.rjTextBox1.Location = new System.Drawing.Point(35, 29);
+            this.rjTextBox1.Location = new System.Drawing.Point(27, 35);
             this.rjTextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
@@ -146,7 +80,7 @@
             this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox1.PlaceholderText = "Buscar Chofer";
             this.rjTextBox1.Size = new System.Drawing.Size(333, 32);
-            this.rjTextBox1.TabIndex = 16;
+            this.rjTextBox1.TabIndex = 20;
             this.rjTextBox1.Texts = "";
             this.rjTextBox1.UnderlinedStyle = false;
             // 
@@ -187,7 +121,7 @@
             this.panel1.ShadowTopLeftVisible = false;
             this.panel1.Size = new System.Drawing.Size(164, 718);
             this.panel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.panel1.TabIndex = 15;
+            this.panel1.TabIndex = 19;
             this.panel1.Visible = false;
             // 
             // txtPlaca
@@ -456,11 +390,11 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(1288, 29);
+            this.rjButton1.Location = new System.Drawing.Point(1298, 35);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(4);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(171, 49);
-            this.rjButton1.TabIndex = 14;
+            this.rjButton1.TabIndex = 18;
             this.rjButton1.Text = "Agregar";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseMnemonic = false;
@@ -468,12 +402,12 @@
             // 
             // table
             // 
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(192)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(192)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.table.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -483,60 +417,60 @@
             this.table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.table.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.MediumSlateBlue;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.MediumSlateBlue;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.MediumSlateBlue;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.MediumSlateBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.table.ColumnHeadersHeight = 35;
             this.table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Item,
             this.Column6});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(192)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(192)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table.DefaultCellStyle = dataGridViewCellStyle14;
             this.table.DoubleBuffered = true;
             this.table.EnableHeadersVisualStyles = false;
             this.table.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.table.HeaderBgColor = System.Drawing.Color.MediumSlateBlue;
             this.table.HeaderForeColor = System.Drawing.Color.White;
-            this.table.Location = new System.Drawing.Point(12, 100);
+            this.table.Location = new System.Drawing.Point(4, 106);
             this.table.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.table.MultiSelect = false;
             this.table.Name = "table";
             this.table.ReadOnly = true;
             this.table.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.MediumSlateBlue;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.MediumSlateBlue;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.MediumSlateBlue;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.MediumSlateBlue;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.table.RowHeadersVisible = false;
             this.table.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.table.RowTemplate.Height = 24;
             this.table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.table.Size = new System.Drawing.Size(1529, 640);
-            this.table.TabIndex = 13;
+            this.table.Size = new System.Drawing.Size(1547, 687);
+            this.table.TabIndex = 17;
             // 
             // Item
             // 
             this.Item.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.NullValue = null;
-            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(0, 7, 0, 7);
-            this.Item.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.NullValue = null;
+            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(0, 7, 0, 7);
+            this.Item.DefaultCellStyle = dataGridViewCellStyle13;
             this.Item.FillWeight = 10F;
             this.Item.HeaderText = "";
             this.Item.Image = global::CapaPresentacion.Properties.Resources.lista_de_verificacion;
@@ -557,7 +491,7 @@
             this.Column6.ReadOnly = true;
             this.Column6.Text = "🖋️";
             // 
-            // VehiculoIU
+            // HospitalIU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -567,13 +501,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.table);
-            this.Controls.Add(this.txtFiltro);
-            this.Controls.Add(this.btnAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "VehiculoIU";
-            this.Text = "VehiculoIU";
-            this.Load += new System.EventHandler(this.VehiculoIU_Load);
+            this.Name = "HospitalIU";
+            this.Text = "HospitaleIU";
+            this.Load += new System.EventHandler(this.HospitalIU_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -585,9 +516,6 @@
 
         #endregion
 
-        private RJCodeAdvance.RJControls.RJTextBox txtFiltro;
-        private RJCodeAdvance.RJControls.RJButton btnAdd;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private RJCodeAdvance.RJControls.RJTextBox rjTextBox1;
         private Bunifu.UI.WinForms.BunifuShadowPanel panel1;
         private RJCodeAdvance.RJControls.RJComboBox txtPlaca;

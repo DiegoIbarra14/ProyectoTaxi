@@ -11,7 +11,7 @@ namespace CapaDatos
     {
         public static SqlConnection ConectartoBD() {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "localhost";
+            builder.DataSource = "LAPTOP-TTDAQSNT\\SQLEXPRESS";
             builder.InitialCatalog = "TransporteTaxi";
             builder.IntegratedSecurity = true;
             string cadenaConexion = builder.ConnectionString;

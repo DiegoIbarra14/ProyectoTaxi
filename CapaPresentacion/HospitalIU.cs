@@ -11,29 +11,21 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class VehiculoIU : Form
+    public partial class HospitalIU : Form
     {
-        public VehiculoIU()
+        public HospitalIU()
         {
             InitializeComponent();
         }
 
-        private void table_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void VehiculoIU_Load(object sender, EventArgs e)
+        private void HospitalIU_Load(object sender, EventArgs e)
         {
             FillGrid();
             AddIcon();
         }
         private void FillGrid()
         {
-            this.table.DataSource = new VehiculoBLL().SelectAll();
-
-
-
+            this.table.DataSource = new HospitalBLL().SelectAll();
 
         }
         private void AddIcon()

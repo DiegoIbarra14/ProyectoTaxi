@@ -177,8 +177,10 @@ namespace CapaPresentacion
                     txtdni.Texts = table.Rows[e.RowIndex].Cells["DNI"].Value.ToString();
                     this.panel1.Visible = true;
                     txtPlaca.SelectedItem = table.Rows[e.RowIndex].Cells["placa"].Value;
-                    DateTime fechaCompleta = DateTime.ParseExact(table.Rows[e.RowIndex].Cells["Fecha de Ingreso"].Value.ToString(), "d/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+                    MessageBox.Show(table.Rows[e.RowIndex].Cells["Fecha de Ingreso"].Value.ToString());
+                    DateTime fechaCompleta = (DateTime)table.Rows[e.RowIndex].Cells["Fecha de Ingreso"].Value;
                     txtFechaI.Value = fechaCompleta.Date;
+                    
                     
 
                 }

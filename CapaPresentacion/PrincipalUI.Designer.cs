@@ -56,10 +56,10 @@
             // 
             this.ContentPanelChild.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ContentPanelChild.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanelChild.Location = new System.Drawing.Point(202, 39);
-            this.ContentPanelChild.Margin = new System.Windows.Forms.Padding(2);
+            this.ContentPanelChild.Location = new System.Drawing.Point(269, 48);
+            this.ContentPanelChild.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ContentPanelChild.Name = "ContentPanelChild";
-            this.ContentPanelChild.Size = new System.Drawing.Size(1182, 622);
+            this.ContentPanelChild.Size = new System.Drawing.Size(1576, 766);
             this.ContentPanelChild.TabIndex = 5;
             // 
             // panel2
@@ -70,10 +70,10 @@
             this.panel2.Controls.Add(this.btnMaximize);
             this.panel2.Controls.Add(this.btnClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(202, 0);
+            this.panel2.Location = new System.Drawing.Point(269, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1182, 39);
+            this.panel2.Size = new System.Drawing.Size(1576, 48);
             this.panel2.TabIndex = 4;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
             // 
@@ -81,10 +81,10 @@
             // 
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.Image = global::CapaPresentacion.Properties.Resources.icons8_minimizar_la_ventana_96;
-            this.btnMinimize.Location = new System.Drawing.Point(1117, -2);
+            this.btnMinimize.Location = new System.Drawing.Point(1489, -2);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(22, 23);
+            this.btnMinimize.Size = new System.Drawing.Size(29, 28);
             this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimize.TabIndex = 6;
             this.btnMinimize.TabStop = false;
@@ -99,8 +99,8 @@
             this.title.Location = new System.Drawing.Point(0, 0);
             this.title.Margin = new System.Windows.Forms.Padding(0);
             this.title.Name = "title";
-            this.title.Padding = new System.Windows.Forms.Padding(8, 8, 0, 8);
-            this.title.Size = new System.Drawing.Size(121, 35);
+            this.title.Padding = new System.Windows.Forms.Padding(11, 10, 0, 10);
+            this.title.Size = new System.Drawing.Size(154, 44);
             this.title.TabIndex = 5;
             this.title.Text = "DASHBOARD";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -109,10 +109,10 @@
             // 
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.Image = global::CapaPresentacion.Properties.Resources.icons8_maximizar_96;
-            this.btnMaximize.Location = new System.Drawing.Point(1139, -2);
+            this.btnMaximize.Location = new System.Drawing.Point(1519, -2);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(0);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(22, 23);
+            this.btnMaximize.Size = new System.Drawing.Size(29, 28);
             this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximize.TabIndex = 4;
             this.btnMaximize.TabStop = false;
@@ -122,10 +122,10 @@
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Image = global::CapaPresentacion.Properties.Resources.icons8_cerrar_ventana_96;
-            this.btnClose.Location = new System.Drawing.Point(1160, -2);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(0, 2, 2, 2);
+            this.btnClose.Location = new System.Drawing.Point(1547, -2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(0, 2, 3, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(22, 23);
+            this.btnClose.Size = new System.Drawing.Size(29, 28);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 0;
             this.btnClose.TabStop = false;
@@ -138,9 +138,9 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(202, 661);
+            this.panel1.Size = new System.Drawing.Size(269, 814);
             this.panel1.TabIndex = 3;
             // 
             // panel5
@@ -150,10 +150,10 @@
             this.panel5.Controls.Add(this.iconButton1);
             this.panel5.Controls.Add(this.btnProducto);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 80);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(0, 98);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(202, 581);
+            this.panel5.Size = new System.Drawing.Size(269, 716);
             this.panel5.TabIndex = 1;
             // 
             // iconButton3
@@ -171,15 +171,16 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 30;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 121);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton3.Location = new System.Drawing.Point(0, 148);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.iconButton3.Size = new System.Drawing.Size(202, 44);
+            this.iconButton3.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.iconButton3.Size = new System.Drawing.Size(269, 54);
             this.iconButton3.TabIndex = 5;
             this.iconButton3.Text = "Servicios";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton2
             // 
@@ -196,15 +197,16 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 80);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton2.Location = new System.Drawing.Point(0, 98);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(202, 41);
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.iconButton2.Size = new System.Drawing.Size(269, 50);
             this.iconButton2.TabIndex = 4;
             this.iconButton2.Text = "Hospitales";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton1
             // 
@@ -221,11 +223,11 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 40);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton1.Location = new System.Drawing.Point(0, 49);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(202, 40);
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(269, 49);
             this.iconButton1.TabIndex = 3;
             this.iconButton1.Text = "Vehiculos";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -248,10 +250,10 @@
             this.btnProducto.IconSize = 30;
             this.btnProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducto.Location = new System.Drawing.Point(0, 0);
-            this.btnProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProducto.Name = "btnProducto";
-            this.btnProducto.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.btnProducto.Size = new System.Drawing.Size(202, 40);
+            this.btnProducto.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnProducto.Size = new System.Drawing.Size(269, 49);
             this.btnProducto.TabIndex = 2;
             this.btnProducto.Text = "Conductores";
             this.btnProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -263,31 +265,31 @@
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(202, 80);
+            this.panel4.Size = new System.Drawing.Size(269, 98);
             this.panel4.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.logocarteeditar_transformed_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(261, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // PrincipalUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 661);
+            this.ClientSize = new System.Drawing.Size(1845, 814);
             this.Controls.Add(this.ContentPanelChild);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PrincipalUI";
             this.Text = "PrincipalUI";
             this.Load += new System.EventHandler(this.PrincipalUI_Load);
