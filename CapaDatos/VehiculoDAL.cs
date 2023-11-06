@@ -131,7 +131,7 @@ namespace CapaDatos
             List<string> datos= new List<string>();
             using (SqlConnection con = ConexionDAL.ConectartoBD())
             {
-                string query = "select placa form vehiculo";
+                string query = "select placa from vehiculo";
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
                      

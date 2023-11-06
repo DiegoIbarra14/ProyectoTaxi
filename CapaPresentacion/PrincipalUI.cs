@@ -13,6 +13,7 @@ namespace CapaPresentacion
 {
     public partial class PrincipalUI : Form
     {
+        //public static int ParentSize;
         Size formSize;
         int border = 2;
         public PrincipalUI()
@@ -20,6 +21,7 @@ namespace CapaPresentacion
             InitializeComponent();
             this.Padding = new Padding(border);
             this.BackColor = Color.FromArgb(91, 177, 255);
+            
         }
 
        
@@ -182,6 +184,7 @@ namespace CapaPresentacion
 
             }
             this.formchild = form;
+            
             this.formchild.TopLevel = false;
             formchild.FormBorderStyle = FormBorderStyle.None;
             formchild.Dock = DockStyle.Fill;
@@ -189,7 +192,7 @@ namespace CapaPresentacion
             this.ContentPanelChild.Tag = formchild;
             this.formchild.BringToFront();
             this.formchild.Show();
-
+            Location = form.Location;
         }
 
        
@@ -205,10 +208,15 @@ namespace CapaPresentacion
 
 
         }
-
+        
         private void PrincipalUI_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            showForm(new VehiculoIU());
         }
     }
 }

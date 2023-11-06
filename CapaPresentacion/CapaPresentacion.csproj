@@ -33,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu.UI.WinForms">
+    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2cd9edde853ca0a6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Documents\ss\Bunifu_UI_WinForm_6.1\Bunifu.UI.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.52">
@@ -83,6 +84,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal.Designer.cs">
+      <DependentUpon>Modal.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrincipalUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +98,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehiculoIU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiculoIU.Designer.cs">
+      <DependentUpon>VehiculoIU.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChoferesUI.resx">
       <DependentUpon>ChoferesUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal.resx">
+      <DependentUpon>Modal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrincipalUI.resx">
       <DependentUpon>PrincipalUI.cs</DependentUpon>
@@ -110,6 +126,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VehiculoIU.resx">
+      <DependentUpon>VehiculoIU.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -154,6 +173,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-minimizar-la-ventana-96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

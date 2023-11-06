@@ -17,10 +17,11 @@ namespace CapaDatos
 
             using (SqlConnection con = ConexionDAL.ConectartoBD())
             {
-                string consulta = "Select * from chofer";
+                string procedure = "Mostrar_Chofer";
 
-                SqlDataAdapter adapter = new SqlDataAdapter(consulta, con);
-
+                SqlCommand cmd = new SqlCommand(procedure,con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 try
                 {
                     con.Open();
@@ -39,9 +40,10 @@ namespace CapaDatos
 
 
         }
-        public int Insert(ChoferEL chofer)
+        public string Insert(ChoferEL chofer)
         {
             int request = 0;
+            string valor = "";
             using (SqlConnection con = ConexionDAL.ConectartoBD())
             {
                 string query = "INSERT INTO chofer(dni,Nombre,ApellidoP,ApellidoM,FechaIngreso,placa)VALUES(@dni,@Nombre,@ApellidoP,@ApellidoM,@FechaIngreso,@placa)";
@@ -62,13 +64,15 @@ namespace CapaDatos
                     }
                     catch (Exception ex)
                     {
+                        
                         Console.WriteLine(ex.Message);
+                        valor = ex.Message;
                     }
 
                 }
 
             }
-            return request;
+            return valor;
 
         }
         public int Update(ChoferEL chofer)

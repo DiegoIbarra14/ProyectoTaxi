@@ -15,19 +15,19 @@ namespace CapaLogicaNegocio
         {
             ChoferDAL choferDAL = new ChoferDAL();
             DataTable tableChofer = choferDAL.Selectall();
-            tableChofer.Columns[0].ColumnName = "DNI";
-            tableChofer.Columns[1].ColumnName = "Nombre";
-            tableChofer.Columns[2].ColumnName = "Apellido Paterno";
-            tableChofer.Columns[3].ColumnName = "Apellido Materno";
-            tableChofer.Columns[4].ColumnName = "Fecha Ingreso";
-            tableChofer.Columns[5].ColumnName = "Placa de Taxi";
+            //tableChofer.Columns[0].ColumnName = "DNI";
+            //tableChofer.Columns[1].ColumnName = "Nombre";
+            //tableChofer.Columns[2].ColumnName = "Apellido Paterno";
+            //tableChofer.Columns[3].ColumnName = "Apellido Materno";
+            //tableChofer.Columns[4].ColumnName = "Fecha Ingreso";
+  
             
             return tableChofer;
         }
-        public int Insert(ChoferEL chofer)
+        public string Insert(ChoferEL chofer)
         {
             ChoferDAL choferDAL =new ChoferDAL();
-            int resultado=choferDAL.Insert(chofer);
+            string resultado=choferDAL.Insert(chofer);
             return resultado;
         }
         public int Update (ChoferEL chofer) {

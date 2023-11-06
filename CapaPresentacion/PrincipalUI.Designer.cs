@@ -30,25 +30,25 @@
         {
             this.ContentPanelChild = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.title = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.title = new System.Windows.Forms.Label();
             this.btnMaximize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnProducto = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,55 +77,6 @@
             this.panel2.TabIndex = 4;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
             // 
-            // title
-            // 
-            this.title.AutoSize = true;
-            this.title.Dock = System.Windows.Forms.DockStyle.Left;
-            this.title.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.title.Location = new System.Drawing.Point(0, 0);
-            this.title.Margin = new System.Windows.Forms.Padding(0);
-            this.title.Name = "title";
-            this.title.Padding = new System.Windows.Forms.Padding(8, 8, 0, 8);
-            this.title.Size = new System.Drawing.Size(121, 35);
-            this.title.TabIndex = 5;
-            this.title.Text = "DASHBOARD";
-            this.title.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Turquoise;
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(202, 661);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.iconButton3);
-            this.panel5.Controls.Add(this.iconButton2);
-            this.panel5.Controls.Add(this.iconButton1);
-            this.panel5.Controls.Add(this.btnProducto);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 80);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(202, 581);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(202, 80);
-            this.panel4.TabIndex = 0;
-            // 
             // btnMinimize
             // 
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -138,6 +89,21 @@
             this.btnMinimize.TabIndex = 6;
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Dock = System.Windows.Forms.DockStyle.Left;
+            this.title.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.title.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.title.Location = new System.Drawing.Point(0, 0);
+            this.title.Margin = new System.Windows.Forms.Padding(0);
+            this.title.Name = "title";
+            this.title.Padding = new System.Windows.Forms.Padding(8, 8, 0, 8);
+            this.title.Size = new System.Drawing.Size(121, 35);
+            this.title.TabIndex = 5;
+            this.title.Text = "DASHBOARD";
+            this.title.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnMaximize
             // 
@@ -165,6 +131,31 @@
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(202, 661);
+            this.panel1.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.iconButton3);
+            this.panel5.Controls.Add(this.iconButton2);
+            this.panel5.Controls.Add(this.iconButton1);
+            this.panel5.Controls.Add(this.btnProducto);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 80);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(202, 581);
+            this.panel5.TabIndex = 1;
+            // 
             // iconButton3
             // 
             this.iconButton3.BackColor = System.Drawing.Color.Transparent;
@@ -176,7 +167,7 @@
             this.iconButton3.Font = new System.Drawing.Font("Verdana", 10F);
             this.iconButton3.ForeColor = System.Drawing.Color.White;
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.HandshakeAlt;
-            this.iconButton3.IconColor = System.Drawing.Color.Firebrick;
+            this.iconButton3.IconColor = System.Drawing.Color.Red;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 30;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,7 +192,7 @@
             this.iconButton2.Font = new System.Drawing.Font("Verdana", 10F);
             this.iconButton2.ForeColor = System.Drawing.Color.White;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.HospitalWide;
-            this.iconButton2.IconColor = System.Drawing.Color.Firebrick;
+            this.iconButton2.IconColor = System.Drawing.Color.Red;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -226,7 +217,7 @@
             this.iconButton1.Font = new System.Drawing.Font("Verdana", 10F);
             this.iconButton1.ForeColor = System.Drawing.Color.White;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Taxi;
-            this.iconButton1.IconColor = System.Drawing.Color.Firebrick;
+            this.iconButton1.IconColor = System.Drawing.Color.Red;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,6 +230,7 @@
             this.iconButton1.Text = "Vehiculos";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // btnProducto
             // 
@@ -251,7 +243,7 @@
             this.btnProducto.Font = new System.Drawing.Font("Verdana", 10F);
             this.btnProducto.ForeColor = System.Drawing.Color.White;
             this.btnProducto.IconChar = FontAwesome.Sharp.IconChar.IdCardAlt;
-            this.btnProducto.IconColor = System.Drawing.Color.Firebrick;
+            this.btnProducto.IconColor = System.Drawing.Color.Red;
             this.btnProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProducto.IconSize = 30;
             this.btnProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -265,6 +257,16 @@
             this.btnProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProducto.UseVisualStyleBackColor = false;
             this.btnProducto.Click += new System.EventHandler(this.btnVenta_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(202, 80);
+            this.panel4.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -292,12 +294,12 @@
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
